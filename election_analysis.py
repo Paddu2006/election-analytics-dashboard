@@ -40,7 +40,7 @@ plt.xlabel('Party')
 plt.ylabel('Number of Seats')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
-plt.savefig('party_seats.png')
+plt.savefig('party_seats.png')  # ← SAVES FILE
 plt.show()
 
 # ============================================
@@ -65,7 +65,7 @@ plt.figure(figsize=(6, 6))
 gender_counts = [women_count, total_winners - women_count]
 plt.pie(gender_counts, labels=['Women', 'Men'], autopct='%1.1f%%', colors=['pink', 'lightblue'])
 plt.title('Gender Representation in Parliament', fontsize=14)
-plt.savefig('gender_representation.png')
+plt.savefig('gender_representation.png')  # ← SAVES FILE
 plt.show()
 
 # ============================================
@@ -88,7 +88,7 @@ plt.xlabel('State')
 plt.ylabel('Number of Winners')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
-plt.savefig('state_winners.png')
+plt.savefig('state_winners.png')  # ← SAVES FILE
 plt.show()
 
 # ============================================
@@ -106,7 +106,7 @@ losers_age = df[df['WINNER'] == 0]['AGE'].dropna()
 print(f"Average age of WINNERS: {winners_age.mean():.1f} years")
 print(f"Average age of LOSERS: {losers_age.mean():.1f} years")
 
-# Age distribution chart
+# Chart
 plt.figure(figsize=(10, 6))
 plt.hist(winners_age, bins=20, alpha=0.7, label='Winners', color='green')
 plt.hist(losers_age, bins=20, alpha=0.5, label='Losers', color='red')
@@ -114,7 +114,7 @@ plt.xlabel('Age')
 plt.ylabel('Number of Candidates')
 plt.title('Age Distribution: Winners vs Losers', fontsize=14)
 plt.legend()
-plt.savefig('age_distribution.png')
+plt.savefig('age_distribution.png')  # ← SAVES FILE
 plt.show()
 
 # ============================================
@@ -137,7 +137,7 @@ plt.xlabel('Education Level')
 plt.ylabel('Number of Winners')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
-plt.savefig('education_analysis.png')
+plt.savefig('education_analysis.png')  # ← SAVES FILE
 plt.show()
 
 # ============================================
